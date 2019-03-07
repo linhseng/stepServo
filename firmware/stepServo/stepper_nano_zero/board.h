@@ -169,8 +169,9 @@ typedef enum {
 #define Serial5 Serial 
 #else
 //#define SerialUSB Serial
-#define SerialUSB Serial5
+#define SerialUSB Serial5	//修改使用串口收发命令
 
+#define DISABLE_LCD			//修改关闭lcd
 
 
 

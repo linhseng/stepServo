@@ -651,6 +651,13 @@ void NZS::begin(void)
 			}
 
 			Lcd.setMenu(NULL);
+#else
+		delay(1000);
+		//TODO add code here for LCD and command line loop
+		while(false == stepperCtrl.calibrationValid())
+		{
+			commandsProcess(); //handle commands
+		}
 #endif
 		}
 
