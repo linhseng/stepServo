@@ -168,7 +168,12 @@ typedef enum {
 #define DISABLE_LCD
 #define Serial5 Serial 
 #else
-#define SerialUSB Serial
+//#define SerialUSB Serial
+#define SerialUSB Serial5
+
+
+
+
 #endif 
 
 #define PIN_STEP_INPUT  (0)

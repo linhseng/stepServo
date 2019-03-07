@@ -561,6 +561,7 @@ void NZS::begin(void)
 	//setup the serial port for syslog
 	Serial5.begin(SERIAL_BAUD);
 
+#define CMD_SERIAL_PORT
 
 #ifndef CMD_SERIAL_PORT
 	SysLogInit(&Serial5,LOG_DEBUG); //use SWO for the sysloging
